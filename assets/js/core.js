@@ -10,7 +10,7 @@
              return item.url == results[i].ref
           });
         
-        appendString += '<li><span class="align-middle"><a href="/tabs' + item.url + '">' + item.title + '</a> - <a href="/tabs/' + item.location + '">' + item.artist + '</a></span></li>';
+        appendString += '<li><span class="align-middle"><a href="/nursery' + item.url + '">' + item.title + ' ' + item.urn + '</a></span></li>';
       }
 
       searchResults.innerHTML = appendString;
@@ -40,7 +40,7 @@
     var idx = lunr(function () {
         this.ref('url');
         this.field('title');
-        this.field('artist');
+        this.field('urn');
 
 
         window.title.forEach(function (doc) {
