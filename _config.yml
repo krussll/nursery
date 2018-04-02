@@ -10,4 +10,5 @@ jumbotron-font: #fff
 
 collections:
   nursery:
+    output: true
     permalink: /:collection/:name 
