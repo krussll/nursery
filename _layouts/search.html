@@ -5,14 +5,14 @@
     {% include nav.html %}
     
   <div class="container my-5">
-    <h1>Search Resultsa</h1>
+    <h1>Search Resultsaaa</h1>
     <ul id="search-results" class="list"></ul>
   </div>
   
   {% include footer.html %}
   {% include scripts.html %}
     <script>
-      window.title = [{% for n in site.nursery %}{% endfor %}];
+      window.title = [{% for p in site.nursery %}{"url": "{{ p.url | xml_escape }}"}{% endfor %}];
     </script>
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
