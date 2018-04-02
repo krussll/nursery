@@ -13,10 +13,10 @@
   {% include scripts.html %}
     
     <script>
-      window.title = [{% for n in site.nursery %}{"title": "{{ n.title | xml_escape }}","urn": "","url": "{{ n.url | xml_escape }}"}{% endfor %}];
+      window.title = [];
     </script>
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
-    <script src="{{ site.url }}/assets/js/core.js"></script>
+    <script src="{{ site.url }}assets/js/core.js"></script>
   </body>
 </html>
