@@ -3,11 +3,18 @@
   {% include head.html %}
   <body>
     {% include nav.html %}
-    <div class="jumbotron">
+    <div class="jumbotron" style="background: linear-gradient(rgba(236, 239, 238, 0.25), rgba(34, 37, 40, 0.55)),  url(/images/art-supplies-brushes-rulers-scissors-159644.jpeg) no-repeat center center">
       <div class="container text-center">
         <h1>{{ page.title }}</h1>
         <p class="lead">{{ page.sub-title }}</p>
-        <p><a class="btn btn-lg btn-success" href="{{ site.url }}{{ page.action-location }}" role="button">{{ page.action-text }}</a></p>
+        <p>
+        <form action="/search" method="GET"> 
+          <div>
+            <input required type="text" name="nursery" placeholder="Name or URN" id="nursery" value="">
+          </div> 
+            <button class="btn btn-primary" type="submit">Find</button>
+          </form>
+        </p>
       </div>
     </div>
     
