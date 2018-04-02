@@ -13,7 +13,7 @@
   {% include scripts.html %}
     
     <script>
-      window.title = [{% for n in site.nursery %}{"title": "{{ n.title | xml_escape }}","urn": "{{ n.urn | xml_escape }}","url": "{{ n.url | xml_escape }}"}{% unless forloop.last %},{% endunless %}{% endfor %}];
+      window.title = [{% for n in site.nursery %}{"title": "{{ n.title | xml_escape }}","urn": "","url": "{{ n.url | xml_escape }}"}{% unless forloop.last %},{% endunless %}{% endfor %}];
     </script>
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
