@@ -1,9 +1,14 @@
 theme: jekyll-theme-minimal
 permalink: pretty
-name: Boilerplate
-url: https://krussll.github.io/boilerplate/
+name: Nursery
+url: https://krussll.github.io/nursery/
 
 nav-background: #B40604
 nav-font: #fff
 jumbotron-background: #ECEEEF
 jumbotron-font: #fff
+
+collections:
+  nursery:
+    output: true
+    permalink: /:collection/:name 
