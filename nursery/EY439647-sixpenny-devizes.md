@@ -1,6 +1,7 @@
 ---
 layout: nursery
-title: Sixpenny Nursery (EY439647)
+title: Sixpenny Nursery
+urn: EY439647
 needs: 2
 contribution: 3
 leadership: 3
