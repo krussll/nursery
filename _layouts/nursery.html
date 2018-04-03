@@ -10,7 +10,7 @@
             <h1>{{ page.title }}</h1>
             <h2>URN: {{ page.urn }}</h2>
             
-            <p class="lead">{{ page.date }}</p>            
+            <p class="lead">{{ page.date | date_to_long_string }}</p>            
             <p class="lead">{{ page.address }}</p>
           </div>
           <div class="col-xs-12 col-sm-4 text-center">
