@@ -8,115 +8,122 @@
     <h1>{{ page.title }}</h1>
     <p class="lead">{{ page.urn }}</p>
     
-    <div>
-      {% case page.needs %}
-        {% when 4 %}
-          <div class="c100 p25 red">
-            <span>4</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+    <div class="row text-center">
+      <div class="col-md-3 justify-content-center">
+        {% case page.needs %}
+          {% when 4 %}
+            <div class="c100 p25 red">
+              <span>4</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-        {% when 3 %}
-          <div class="c100 p50 orange">
-            <span>3</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+          {% when 3 %}
+            <div class="c100 p50 orange">
+              <span>3</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-        {% when 2 %}
-          <div class="c100 p75 green">
-            <span>2</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+          {% when 2 %}
+            <div class="c100 p75 green">
+              <span>2</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-        {% when 1 %}
-          <div class="c100 p100 green">
-            <span>1</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+          {% when 1 %}
+            <div class="c100 p100 green">
+              <span>1</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-      {% endcase %}
-
-      {% case page.contribution %}
-        {% when 4 %}
-          <div class="c100 p25 red">
-            <span>4</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+        {% endcase %}
+      </div>
+      
+      
+      <div class="col-md-3 justify-content-center">
+        {% case page.contribution %}
+          {% when 4 %}
+            <div class="c100 p25 red">
+              <span>4</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-        {% when 3 %}
-          <div class="c100 p50 orange">
-            <span>3</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+          {% when 3 %}
+            <div class="c100 p50 orange">
+              <span>3</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-        {% when 2 %}
-          <div class="c100 p75 green">
-            <span>2</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+          {% when 2 %}
+            <div class="c100 p75 green">
+              <span>2</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-        {% when 1 %}
-          <div class="c100 p100 green">
-            <span>1</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+          {% when 1 %}
+            <div class="c100 p100 green">
+              <span>1</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-      {% endcase %}
-
-      {% case page.leadership %}
-        {% when 4 %}
-          <div class="c100 p25 red">
-            <span>4</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+        {% endcase %}
+      </div>
+      
+      <div class="col-md-3 justify-content-center">
+        {% case page.leadership %}
+          {% when 4 %}
+            <div class="c100 p25 red">
+              <span>4</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-        {% when 3 %}
-          <div class="c100 p50 orange">
-            <span>3</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+          {% when 3 %}
+            <div class="c100 p50 orange">
+              <span>3</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-        {% when 2 %}
-          <div class="c100 p75 green">
-            <span>2</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+          {% when 2 %}
+            <div class="c100 p75 green">
+              <span>2</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-        {% when 1 %}
-          <div class="c100 p100 green">
-            <span>1</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+          {% when 1 %}
+            <div class="c100 p100 green">
+              <span>1</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
             </div>
-          </div>
-      {% endcase %}
+        {% endcase %}
+      </div>
     </div>
     
-    <div class="row">
-      <div class="column">
+    <div class="row">      
+      <div class="col-md-12 justify-content-center">
         {% case page.overall %}
           {% when 4 %}
             <div class="c100 p25 red big">
