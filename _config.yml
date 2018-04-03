@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 permalink: pretty
 name: nurseryratings.co.uk
-url: https://krussll.github.io/nursery/
+url: https://www.nurseryratings.co.uk/
 
 collections:
   nursery:
