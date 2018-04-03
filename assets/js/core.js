@@ -10,12 +10,12 @@
              return item.url == results[i].ref
           });
         
-        appendString += '<li><span class="align-middle"><a href="/nursery' + item.url + '">' + item.title + ' ' + item.urn + '</a></span></li>';
+        appendString += '<tr><td><a href="/nursery' + item.url + '">' + item.title + ' <span>' + item.urn + '</span></a></td></tr>';
       }
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<div>No results found</div>';
+      searchResults.innerHTML = '<tr><td>No results found</td></tr>';
     }
   }
 
