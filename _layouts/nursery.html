@@ -9,10 +9,145 @@
     <p class="lead">{{ page.urn }}</p>
     
     
-    <p class="lead">{{ page.needs }}</p>
-    <p class="lead">{{ page.contribution }}</p>
-    <p class="lead">{{ page.leadership }}</p>
-    <p class="lead">{{ page.overall }}</p>
+    {% case page.needs %}
+      {% when 4 %}
+        <div class="c100 p25 red">
+          <span>inadequate</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 3 %}
+        <div class="c100 p50 orange">
+          <span>requires improvement</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 2 %}
+        <div class="c100 p75 green">
+          <span>good</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 1 %}
+        <div class="c100 p100 green">
+          <span>outstanding</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+    {% endcase %}
+    
+    {% case page.contribution %}
+      {% when 4 %}
+        <div class="c100 p25 red">
+          <span>inadequate</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 3 %}
+        <div class="c100 p50 orange">
+          <span>requires improvement</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 2 %}
+        <div class="c100 p75 green">
+          <span>good</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 1 %}
+        <div class="c100 p100 green">
+          <span>outstanding</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+    {% endcase %}
+    
+    {% case page.leadership %}
+      {% when 4 %}
+        <div class="c100 p25 red">
+          <span>inadequate</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 3 %}
+        <div class="c100 p50 orange">
+          <span>requires improvement</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 2 %}
+        <div class="c100 p75 green">
+          <span>good</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 1 %}
+        <div class="c100 p100 green">
+          <span>outstanding</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+    {% endcase %}
+    
+    {% case page.overall %}
+      {% when 4 %}
+        <div class="c100 p25 red">
+          <span>inadequate</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 3 %}
+        <div class="c100 p50 orange">
+          <span>requires improvement</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 2 %}
+        <div class="c100 p75 green">
+          <span>good</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      {% when 1 %}
+        <div class="c100 p100 green">
+          <span>outstanding</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+    {% endcase %}
     
     
     <p class="lead">{{ page.date }}</p>
