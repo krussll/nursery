@@ -4,9 +4,53 @@
   <body>
     {% include nav.html %}
     
-  <div class="container my-5">
-    <h1>{{ page.title }}</h1>
-    <p class="lead">{{ page.urn }}</p>
+      <div class="container my-5">
+        <div class="row text-center">
+          <div class="col-xs-12 col-sm-8">
+            <h1>{{ page.title }}</h1>
+            <h2>URN: {{ page.urn }}</h2>
+            
+            <p class="lead">{{ page.date }}</p>            
+            <p class="lead">{{ page.address }}</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-center">
+            <p>The overall quality and standards of the early years provision</p>
+            {% case page.overall %}
+              {% when 4 %}
+                <div class="c100 p25 red big">
+                  <span>4</span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+              {% when 3 %}
+                <div class="c100 p50 orange big">
+                  <span>3</span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+              {% when 2 %}
+                <div class="c100 p75 green big">
+                  <span>2</span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+              {% when 1 %}
+                <div class="c100 p100 green big">
+                  <span>1</span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+            {% endcase %}
+          </div>
+        </div>
     
     <div class="row text-center">
       <div class="col-md-4 justify-content-center">
@@ -124,48 +168,6 @@
         {% endcase %}
       </div>
     </div>
-    
-    <div class="row">      
-      <div class="col-md-12 justify-content-center">
-        <p>The overall quality and standards of the early years provision</p>
-        {% case page.overall %}
-          {% when 4 %}
-            <div class="c100 p25 red big">
-              <span>4</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 3 %}
-            <div class="c100 p50 orange big">
-              <span>3</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 2 %}
-            <div class="c100 p75 green big">
-              <span>2</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 1 %}
-            <div class="c100 p100 green big">
-              <span>1</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-        {% endcase %}
-      </div>
-    </div>
-    
-    <p class="lead">{{ page.date }}</p>
   </div>
   
   {% include footer.html %}
