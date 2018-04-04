@@ -10,7 +10,7 @@
              return item.url == results[i].ref
           });
         
-        appendString += '<tr><td><a href="/' + item.url + '">' + item.title + ' <span>' + item.urn + '</span></a></td></tr>';
+        appendString += '<tr><td><a href="http://www.nurseryratings.co.uk/' + item.url + '">' + item.title + ' <span>' + item.urn + '</span></a></td></tr>';
       }
 
       searchResults.innerHTML = appendString;
