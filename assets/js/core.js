@@ -40,7 +40,7 @@
   })
     .done(function( data ) {
       
-    var idx = lunr.Index.load(JSON.parse(data));
+    var idx = lunr.Index.load(data);
           
      var results = idx.search(searchTerm); // Get lunr to perform a search
      displaySearchResults(results, window.title); // We'll write this in the next section
