@@ -35,20 +35,16 @@
   var searchTerm = getQueryVariable('query');
 
   if (searchTerm) {
-    // Initalize lunr with the fields it will be searching on. I've given title
-    // a boost of 10 to indicate matches on this field are more important.
-    var idx = lunr(function () {
-        this.ref('url');
-        this.field('title');
-        this.field('urn');
-
-
-        window.title.forEach(function (doc) {
-          this.add(doc)
-        }, this);
-      });
-    
+    $.getJSON( "index.json", {
+    format: "json"
+  })
+    .done(function( data ) {
+      
+    var idx = lunr.Index.load(JSON.parse(data));
+          
      var results = idx.search(searchTerm); // Get lunr to perform a search
      displaySearchResults(results, window.title); // We'll write this in the next section
+    });
+
   }
 })();
