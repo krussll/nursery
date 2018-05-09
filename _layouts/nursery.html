@@ -33,117 +33,21 @@
         <p>How well the early years provision meets the needs of the range of children who attend 
           <a href="#" class="tip" data-toggle="tooltip" title="" data-html="true" data-original-title="1 = Outstanding<br />2 = Good<br />3 = Requires Improvement<br />4 = Inadequate">?</a>
         </p>
-        {% case page.needs %}
-          {% when 4 %}
-            <div class="c100 p25 red center">
-              <span>4</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 3 %}
-            <div class="c100 p50 orange center">
-              <span>3</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 2 %}
-            <div class="c100 p75 green center">
-              <span>2</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 1 %}
-            <div class="c100 p100 green center">
-              <span>1</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-        {% endcase %}
+        {% include rating.html rating=page.needs size="" %}
+        
       </div>
       
       
       <div class="col-md-4 justify-content-center">
         <p>The contribution of the early years provision to the well-being of children <a href="#" class="tip" data-toggle="tooltip" title="" data-html="true" data-original-title="1 = Outstanding<br />2 = Good<br />3 = Requires Improvement<br />4 = Inadequate">?</a></p>
-        {% case page.contribution %}
-          {% when 4 %}
-            <div class="c100 p25 red center">
-              <span>4</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 3 %}
-            <div class="c100 p50 orange center">
-              <span>3</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 2 %}
-            <div class="c100 p75 green center">
-              <span>2</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 1 %}
-            <div class="c100 p100 green center">
-              <span>1</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-        {% endcase %}
+        
+        {% include rating.html rating=page.contribution size="" %}
       </div>
       
       <div class="col-md-4 justify-content-center">
         <p>The effectiveness of the leadership and management of the early years provision <a href="#" class="tip" data-toggle="tooltip" title="" data-html="true" data-original-title="1 = Outstanding<br />2 = Good<br />3 = Requires Improvement<br />4 = Inadequate">?</a></p>
-        {% case page.leadership %}
-          {% when 4 %}
-            <div class="c100 p25 red center">
-              <span>4</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 3 %}
-            <div class="c100 p50 orange center">
-              <span>3</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 2 %}
-            <div class="c100 p75 green center">
-              <span>2</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          {% when 1 %}
-            <div class="c100 p100 green center">
-              <span>1</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-        {% endcase %}
+        
+        {% include rating.html rating=page.leadership size="" %}
       </div>
     </div>
   </div>
