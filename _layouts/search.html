@@ -4,7 +4,15 @@
   <body>
     {% include nav.html %}
     
-  <div class="container my-5">
+    <div class="container my-5">
+      <form action="/search" method="GET"> 
+          <div class="form-inline justify-content-center">
+            <input  class="form-control" type="text" name="query" placeholder="Name or URN" id="query" value="">
+            <button class="btn btn-primary" type="submit">Go!</button>              
+          </div>  
+        </form> 
+    </div>
+    <div class="container my-5">
     <h1>Search Results</h1>
     <div class="row">
       <div class="col-xs-12 col-sm-8">
