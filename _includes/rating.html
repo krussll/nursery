@@ -1,22 +1,6 @@
-{% assign percent = "0" %}
-{% assign colour = "red" %}
 
-{% case include.rating %}
-  {% when 4 %}
-    {% percent = "25" %}
-    {% colour = "red" %}        
-  {% when 3 %}
-    {% percent = "50" %}
-    {% colour = "orange" %}   
-  {% when 2 %}
-    {% percent = "75" %}
-    {% colour = "green" %}   
-  {% when 1 %}
-    {% percent = "100" %}
-    {% colour = "green" %}   
-{% endcase %}
 
-<div class="c100 p{{ percent }} {{ colour }} {{ include.size }} center">
+<div class="c100 p25 {{ include.size }} center">
   <span>{{ include.rating }}</span>
   <div class="slice">
     <div class="bar"></div>
