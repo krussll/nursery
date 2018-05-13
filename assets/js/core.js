@@ -3,19 +3,19 @@
     var searchResults = document.getElementById('search-results');
 
     if (results.length) { // Are there any results?
-      var appendString = '';
+      var appendString = '<table><th><td></td><td></td></th>';
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = title.find(item => {
              return item.url == results[i].ref
           });
         
-        appendString += '<tr><td><a href="http://www.nurseryratings.co.uk' + item.url + '">' + item.title + ' <span>' + item.urn + '</span></a></td></tr>';
+        appendString += '<tr><td><a href="http://www.nurseryratings.co.uk' + item.url + '">' + item.title + '</a></td><td><a href="http://www.nurseryratings.co.uk' + item.url + '">' + item.urn + '</a></td></tr>';
       }
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<tr><td>No results found</td></tr>';
+      searchResults.innerHTML = '<tr><td colspan="2">No results found</td></tr>';
     }
   }
 
