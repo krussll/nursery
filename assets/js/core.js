@@ -35,7 +35,7 @@
   var searchTerm = getQueryVariable('query');
 
   if (searchTerm) {
-    $.getJSON( "/assets/js/index.json", {
+    $.getJSON( "/assets/js/index.json?key=" + key, {
     format: "json"
   })
     .done(function( data ) {
