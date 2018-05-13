@@ -13,6 +13,7 @@
         appendString += '<tr><td><a href="http://www.nurseryratings.co.uk' + item.url + '">' + item.title + '</a></td><td><a href="http://www.nurseryratings.co.uk' + item.url + '">' + item.urn + '</a></td></tr>';
       }
 
+      appendString += '</table>';
       searchResults.innerHTML = appendString;
     } else {
       searchResults.innerHTML = '<tr><td colspan="2">No results found</td></tr>';
