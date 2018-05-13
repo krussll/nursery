@@ -17,10 +17,11 @@
           {% endif %}
         </div>
         <div class="col-xs-12 col-sm-4 text-center">
-          <p>The overall quality and standards of the early years provision <a href="#" class="tip" data-toggle="tooltip" title="" data-html="true" data-original-title="1 = Outstanding<br />2 = Good<br />3 = Requires Improvement<br />4 = Inadequate">?</a></p>
           {% if page.overall == 0 %}
             {% include nursery-messaging.html %}
           {% else %}
+            <p>The overall quality and standards of the early years provision <a href="#" class="tip" data-toggle="tooltip" title="" data-html="true" data-original-title="1 = Outstanding<br />2 = Good<br />3 = Requires Improvement<br />4 = Inadequate">?</a></p>
+        
             {% include rating.html rating=page.overall size="big" %}
           {% endif %}
         </div>
