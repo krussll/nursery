@@ -1,0 +1,16 @@
+---
+
+layout: nursery
+title: All Saints Preschool
+urn: 311830
+postcode: NE11 0DP
+address: Rowanwood Gardens, GATESHEAD, Tyne and Wear, NE11 0DP
+latestReportUrl: https://reports.ofsted.gov.uk/provider/files/2603917/urn/311830.pdf
+teaching: 2
+development: 2
+leadership: 2
+outcomes: 2
+overall: 2
+date: 11 October 2016
+
+---

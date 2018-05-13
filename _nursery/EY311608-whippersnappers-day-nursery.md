@@ -1,0 +1,16 @@
+---
+
+layout: nursery
+title: Whippersnappers Day Nursery
+urn: EY311608
+postcode: GL18 1BQ
+address: 11 Glebe Close, Newent, Gloucester, Gloucestershire, GL18 1BQ
+latestReportUrl: https://reports.ofsted.gov.uk/provider/files/2608463/urn/EY311608.pdf
+teaching: 2
+development: 2
+leadership: 2
+outcomes: 2
+overall: 2
+date: 24 October 2016
+
+---

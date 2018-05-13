@@ -1,0 +1,16 @@
+---
+
+layout: nursery
+title: Shepherd Lodge Day Nursery
+urn: 309455
+postcode: FY8 3HP
+address: 166 St. Annes Road East, Lytham St. Annes, Lancashire, FY8 3HP
+latestReportUrl: https://reports.ofsted.gov.uk/provider/files/2454690/urn/309455.pdf
+teaching: 0
+development: 0
+leadership: 2
+outcomes: 0
+overall: 2
+date: 22 January 2015
+
+---
