@@ -8,7 +8,7 @@ address: Prospect Farm,   43 Bath Road, Atworth, MELKSHAM, Wiltshire, SN12 8JW
 latestReportUrl: https://reports.ofsted.gov.uk/provider/files/2413478/urn/145837.pdf
 teaching: 0
 contribution: 1
-effectiveness: 1
+needs: 1
 development: 0
 leadership: 1
 outcomes: 0
