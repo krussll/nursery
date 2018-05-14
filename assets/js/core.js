@@ -48,6 +48,6 @@
     });
 
   } else {
-    searchResults.innerHTML = 'No search term was provided';
+    document.getElementById('search-results').innerHTML = 'No search term was provided';
   }
 })();
