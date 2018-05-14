@@ -10,9 +10,10 @@
              return item.url == results[i].ref
           });
         
-        appendString += '<tr><td><a href="http://www.nurseryratings.co.uk' + item.url + '">' + item.title + '</a></td><td><a href="http://www.nurseryratings.co.uk' + item.url + '">' + item.urn + '</a></td></tr>';
+        if (item) {
+          appendString += '<tr><td><a href="http://www.nurseryratings.co.uk' + item.url + '">' + item.title + '</a></td><td><a href="http://www.nurseryratings.co.uk' + item.url + '">' + item.urn + '</a></td></tr>';
+        }
       }
-
       appendString += '</table>';
       searchResults.innerHTML = appendString;
     } else {
