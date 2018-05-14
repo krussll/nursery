@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  {% assign meta = 'Rating for ' | append: page.title | append: ' from Nursery Ratings. Built for parents.' %}
+  {% assign meta = 'Rating for ' | append: page.title | append: ' - ' | append: page.urn | append: ' from Nursery Ratings. Built for parents.' %}
   {% include head.html metadesc= meta %}
   <body>
     {% include nav.html %}
