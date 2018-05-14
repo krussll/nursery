@@ -47,5 +47,7 @@
      displaySearchResults(results, window.title); // We'll write this in the next section
     });
 
+  } else {
+    searchResults.innerHTML = 'No search term was provided';
   }
 })();
