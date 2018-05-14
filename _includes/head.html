@@ -12,10 +12,10 @@
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   
+  {% assign metadesc = "The Best UK Nursery Guide: Easy to Use, Built for Parents. Clearly presented information on all UK nurserys." %
+  
   {% if include.metadesc %}
     {% assign metadesc = include.metadesc %}
-  {% else %}
-    {% assign metadesc = "The Best UK Nursery Guide: Easy to Use, Built for Parents. Clearly presented information on all UK nurserys." %}
   {% endif %}
   
   <meta name="description" content="{% metadesc %}">
