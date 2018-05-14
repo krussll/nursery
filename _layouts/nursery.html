@@ -12,6 +12,9 @@
             
           <p class="lead">{{ page.address }}</p>        
           {% if page.latestReportUrl %}
+            {% if page.datePublish %}
+              <p class="lead">{{ page.datePublish }}</p>
+            {% endif %}
             <p class="lead"><a target="_blank" href="{{ page.latestReportUrl }}" class="btn btn-primary">View Latest Report</a></p>
           {% endif %}
         </div>
